@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+	<link rel="shortcut icon" href="../assets/images/favicon.png" />
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-ELH1X4KLV5"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-ELH1X4KLV5');
+	</script>
+
+	<meta name="description" content=""/>
+	<link rel="canonical" href="" />
+
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="" />
+	<meta property="og:description" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="" />
+
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:description" content="" />
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:site" content="" />
+	<!-- <meta name="twitter:image" content="../assets/img/share.jpg" /> -->
+	<meta name="twitter:creator" content="" />
+
+	<title>Publicaciones | Fondo Editorial | BCP</title>
+
+	<link rel="stylesheet" type="text/css" href="../assets/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/slick.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-TBMFJPT');</script>
+	<!-- End Google Tag Manager -->
+</head>
+
+<style>
+	* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#resultado {
+	list-style: none;
+    width: 100%;
+    max-height: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    /*background: #EEE;*/
+}
+
+#resultado li {
+  padding: 10px 0;
+  border-bottom: 1px solid #CCC
+}
+
+#resultado li:first-child {
+  padding-top: 0;
+}
+
+#resultado li:last-child {
+  border-bottom: 0;
+}
+
+#resultado li a {
+  text-decoration: none;
+}
+
+#resultado li a div {
+  width: 100%;
+  display: flex;
+}
+
+#resultado li a div img {
+  width: 80px;
+  margin-right: 10px;
+}
+
+#resultado li a div p {
+  flex: 1;
+  color: #000;
+}
+.final-barra .buscador-internas {
+    margin-right: 20px;
+    position: relative;
+}
+.lista-resultados.activo {
+    opacity: 1;
+}
+.lista-resultados {
+    position: absolute;
+    width: 100%;
+    border-radius: 5px;
+    overflow-y: scroll;
+    max-height: 265px;
+    background: #EEE;
+    opacity: 0;
+}
+/* Ponemos un color de fondo y redondeamos las esquinas del thumb */
+.lista-resultados::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 5px;
+}
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+.lista-resultados::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+/* Cambiamos el fondo cuando esté en active */
+.lista-resultados::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+}
+/* Ponemos un color de fondo y redondeamos las esquinas del track */
+.lista-resultados::-webkit-scrollbar-track {
+    background: #e1e1e1;
+    border-radius: 5px;
+}
+/* Cambiamos el fondo cuando esté en active o hover */
+.lista-resultados::-webkit-scrollbar-track:hover,
+.lista-resultados::-webkit-scrollbar-track:active {
+  background: #d4d4d4;
+}
+.final-barra .buscador-internas form .control label input#buscador:active::placeholder,
+.final-barra .buscador-internas form .control label input#buscador:focus::placeholder {
+	color: transparent;
+}
+</style>
+<body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TBMFJPT"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<header>
+
+		<div class="content">
+			<a href="../index.html">
+				<h1>Fondo Editorial BCP</h1>
+				<img src="../assets/images/logo_fondo-editorial.png" alt="Fondo Editorial BCP">
+			</a>
+			<div class="final-barra">
+				<div class="buscador-internas">
+					<form action="">
+						<div class="control">
+							<label for="buscador">
+								<input id="buscador" type="text" name="buscador" placeholder="Busca todas nuestras publicaciones">
+							</label>
+						</div>
+					</form>
+					<div class="lista-resultados">
+						<ul id="resultado"></ul>
+					</div>
+				</div>
+				<div id="nav-icon">
+				  <span></span>
+				  <span></span>
+				  <span></span>
+				  <span></span>
+				</div>
+			</div>
+			<nav id="menuOpciones">
+				<ul>
+					<li><a href="../index.html">Inicio</a></li>
+					<li><a class="active" href="../publicaciones/index.html">Publicaciones</a></li>
+					<li><a href="../fondo-editorial/index.html">Fondo Editorial</a></li>
+					<li><a href="../noticias/index.html">Noticias</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<section style="height: 500px; padding-top: 100px;">			
+		<!-- 	<div id="buscar">
+				<form>
+				    <input type="text" id="buscador" name="name" placeholder="busca" autocomplete="off" />
+				</form>
+			</div>
+			<div id="resultado"></div> -->
+		</section>
+	</main>
+	<footer>
+		<div class="content">
+			<a href="index.html">
+				<img src="../assets/images/logo_fondo-editorial.png" alt="Fondo Editorial BCP">
+			</a>
+			<a href="http://atomikal.com/" target="_blank">
+				<img src="../assets/images/powerdby.png" alt="Atomikal">
+			</a>
+		</div>
+	</footer>
+	<script type="text/javascript" src="../assets/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.js"></script>
+	<script type="text/javascript" src="../assets/js/slick.min.js"></script>
+	<script type="text/javascript" src="../assets/js/main.js"></script>
+	<script type="text/javascript" src="../assets/js/buscador.js"></script>
+</body>
+</html>
